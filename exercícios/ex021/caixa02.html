@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tag (Tag de agrupamento)</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 1px 1px 1px 1px rgb(145, 142, 142);
+            border-radius: 10px 0px;
+            
+        }
+
+        nav{
+            background-color: rgb(145, 142, 142);
+            padding: 3px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.747);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            color: cyan;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 1px 1px 1px 1px rgb(143, 141, 141);
+        }
+
+        article{background-color: lightgray;
+
+        }
+
+        article > aside{
+            background-color: rgb(145, 142, 142);
+            padding: 5px;
+        }
+
+        article > h2{
+            text-align: center;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Menu Site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="assuntos">
+            <p>Esporte Política e Tecnólogia</p>
+        </section>
+
+        <section id="notícia">
+            <article>
+                <h2>Notícia sobre o Flamengo</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis quos, atque exercitationem explicabo excepturi cumque itaque autem unde dicta odio reprehenderit nisi culpa doloremque expedita veritatis repellendus quam necessitatibus eveniet?</p>
+                <aside>
+                    <p>Artigo escrito por Diego</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Diego Thiele Canuto</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1/*box-level. mas seu eu quiser modificar: display: inline*/{
+            background-color: aqua;
+            height: 300px;
+            width: 300px;
+
+            border-width: 5px;
+            border-style: solid;
+            border-color: coral;
+            /*border= 5px solid coral (simplificação) Isso se chama shothand*/
+
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            /*padding= 5px 5px 5px 5px. Nesse caso pode representar um valor só, pois os quatro são iguais.*/
+
+            margin-top: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            /*margin= 5px 5px 5px 5px = margin= 5px.
+            Se eu quiser centralizar eu posso fazer margin= 5px auto 5px auto.*/
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: blue;
+            /*outline= 5px dashed blue*/
+        }
+
+        a/*box-inline. Se eu quiser modificar para box-level, eu mudo o display= block. Posso tbm  usar display= inline-block*/{
+            border-width: 5px;
+            border-style: solid;
+            border-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixa inline-level.</a>Vamos ver como isso tudo funciona?</p>
+</body>
+</html>
